@@ -8,11 +8,10 @@
 </head>
 <body>
   <header>
-    <!-- Neuer Container für das rechts ausblendende Bild -->
+    <!-- Header-Inhalt -->
     <div class="header-bg-image">
       <img src="images/original-profile.jpg" alt="Steven Kemendics am Schreibtisch" />
     </div>
-  
     <div class="profile-container">
       <img src="images/profil.png" alt="Profile Picture" class="profile-pic">
       <div class="header-text">
@@ -21,6 +20,7 @@
       </div>
     </div>
   </header>
+  
   <nav>
     <ul>
       <li><a href="index.html">Resume</a></li>
@@ -36,70 +36,91 @@
   <div id="contact-modal">
     <h2>Send me a message</h2>
     <div id="contact-info">
-        <p>E-mail: stevenkemendics@gmail.com</p>
-        <p>Phone: +43 660 8739016</p>
+      <p>E-mail: stevenkemendics@gmail.com</p>
+      <p>Phone: +43 660 8739016</p>
     </div>
     <textarea placeholder="Your message..."></textarea>
     <button id="send-button">Send</button>
     <button id="close-button">Close</button>
-</div>
+  </div>
   
+  <!-- Sprachumschalter -->
+  <div id="language-switcher" style="text-align: center; margin: 20px;">
+    <button onclick="switchLanguage('en')">English</button>
+    <button onclick="switchLanguage('de')">Deutsch</button>
+  </div>
+  
+  <!-- Englische Version (Standard) -->
+  <div id="content-en">
     <section class="reiter-experience">
-        <h2>Experiences at Heinrich Reiter GmbH</h2>
-        <!-- Button zum Umschalten zwischen Kurz- und Langfassung -->
-        <button id="toggle-text-btn">Short Version</button>
-        <div id="docx-content">
-            <p>
-              My first steps into the working world began in the fall of 2009 at McDonald’s. Initially, it was intended as a useful way to pass the time until I could begin my two voluntary years of missionary service. About 20 hours of work per week were planned, but within a few months, it became much more. I was trained in the mornings during the first few months by two ladies who, despite their precision and strictness with the important work processes, created a pleasant and friendly work atmosphere. Since I was young and had a lot of free time, I was soon brought into the night shift team. The stories and tales about the night shifts are partly true, as it really had its own flair and rules to work so late.
-            </p>
-            
-            <p>
-              My tasks included operating the cash register, restocking, and maintaining the checkout area with food and non-food items. During the day, I was an integral part of the drive-thru team. Since I enjoyed working with my team and believed that it was beneficial to give more than what was necessary whenever possible, I quickly became one of the first points of contact when help was needed. As a result, in the last four to six months of my first period working at McDonald’s, I was almost working full-time and had nearly 100 hours of overtime, the most by far. Such a large amount of sacrifice is no longer possible today, now that I am older and have a family, but back then, I was young, had the time, and enjoyed working with this team very much. When you give a lot, you get a lot in return, and thus I was very popular and respected by everyone in the company. I still remember well how, when I once spontaneously asked for a vacation, the deputy store manager came and said: "Of course, you are always there for us, so I am there for you."
-            </p>
-            
-            <p>
-              In mid-October 2010, I was finally able to begin my missionary service. Many were sad to see me go, but everyone was also happy for me and what I would be doing in the next two years. At that time, no one knew that there would be a reunion in the USA after this period.
-            </p>
-            
-            <p>
-              In the winter of 2012, still unsure of what I wanted to do with my life, I returned to McDonald’s. I knew I did not want to spend my future at this workplace, but sitting around and doing nothing was not my thing. The joy was great for me and my colleagues. There were many familiar faces and new ones as well. A shift leader from my first time at McDonald’s, with whom I had a good relationship, had become the new store manager, and thus the expectations from both sides were clear, and I enjoyed the same respect as before. After a few months, I decided to pursue a carpentry apprenticeship and searched for an apprenticeship position while working full-time. I quickly found an apprenticeship, and everything looked like another farewell at my employer. I worked diligently until the end of June and was able to make many good friends again, some of whom were sad but also happy about my new path in life.
-            </p>
-            
-            <p>
-              In the summer, I spent five weeks in the United States visiting old friends. When I returned and was full of anticipation for my carpentry apprenticeship, I learned that the company that was supposed to take me on could no longer do so because they would have to pay me more apprentice wages due to my age, and unfortunately, they could not afford it. I wanted to start something new where I could see a happy future for myself, so I began my job search. In mid-September, I unexpectedly received a call from the store manager and good friend who asked if I could please come back because the employee who opened the morning shift would be out for a few months and they had to fire a shift leader who was supposed to support the morning shift. I was the only one who could seamlessly take over this position quickly. So, I came back for my third stint at McDonald’s. All the employees and shift leaders were very happy to see me again, and I enjoyed a special status. I was the only one who did not have to work weekends and always had the same working hours. My opinion was also always highly valued and accepted by the management team.
-            </p>
-            
-            <p>
-              Nevertheless, I was not really happy there, as I wanted a job that I enjoyed and had career advancement opportunities. The disrespect from customers bothered me. I did an internal training to become a crew trainer and wanted to start an apprenticeship to complete my high school diploma and then study. Unfortunately, the regional manager took care of my apprenticeship too late, so I could not start at the beginning of the apprenticeship year. I felt stuck and became increasingly unhappy with my employer. In the meantime, I had married, and it was clear that unemployment was not an option for me. A friend had recently started working at Interspar, and his store manager was very satisfied with him. Since there is always a high turnover in retail, a position quickly became available, which he recommended to me, and I got the job. During my third stint, I stayed at McDonald’s for almost a year, but this time the farewell was final. The farewell was grand because the team was fantastic. In my three previous different workplaces (McDonald’s, Interspar, Heinrich Reiter GmbH), I never had such a close-knit team. If you made an effort to do the job right, you were immediately accepted by everyone, and everyone was willing to go the extra mile for each other. Even weeks, months, and even a year or two later, when I visited, I was still asked if I wanted to come back.
-            </p>
-            
-            <p>
-              Many of my attitudes towards the working world and my skills were deepened during my time at McDonald’s. The importance of a supportive team, working hard not just for money, and that a certain willingness to sacrifice is worthwhile.
-            </p>
-          </div>
-              
+      <h2>Experiences at Heinrich Reiter GmbH</h2>
+      <!-- Umschalt-Button für Kurz-/Langfassung -->
+      <button id="toggle-text-btn">Short Version</button>
+      <div id="docx-content">
+        <p>
+          <p>From the beginning, it was clear to me that more was expected of me than from others in the company. I was supposed to quickly learn how to pick and pack the goods and understand the special requests of individual customers, as well as master the products themselves and customer consultation. I was hired not only to assist with warehouse management but also to support retail sales. In retail sales, I had to handle the sale and collection of goods, as well as the concerns of walk-in customers, in addition to the typical tasks in the warehouse.</p>
+          
+          <p>Teamwork was a challenging issue in this company. There were many different departments and areas, and long before I started, there were already disagreements and conflicts among long-term employees. There were always small groups that supported each other and created a good atmosphere, but in my almost eight years, there was never a moment when everyone in the warehouse got along. The head of the company, the founder's son, had even brought his two sons into the business. Although he always ensured the work safety of his employees, he had no open ear for disagreements.</p>
+          
+          <p>Time passed, and there was a constant change of employees in the company. I always got along very well with all the new colleagues. In sales, I tried to learn as much as possible about the different products on my own initiative. It was expected of me to handle the most common problems in the store. For more complicated matters, I was to call the specialist staff in the office. Since I apparently satisfied the boss very much, my salary increased almost annually, making me feel very comfortable in the company, especially as someone with a low level of education.</p>
+          
+          <p>I then set myself the goal of becoming a leader in the warehouse and began to further expand my knowledge. I changed departments in the warehouse and was always ready to help out where needed. As a result, I quickly became the only employee who had worked in every area and had knowledge of the entire warehouse. When the opportunity arose, I was appointed as one of two team leaders in the warehouse, despite being by far the youngest and having the fewest years of service in the company. In our warehouse, there was no warehouse manager, but two team leaders who divided the warehouse and tasks between them. Through my efforts to gain experience in all areas, more and more employees began to help out outside their own areas of responsibility, and the overall atmosphere improved. While the warehouse was not a complete unit, teamwork did improve.</p>
+        
+        </p>
+      </div>
     </section>
- 
-  <!-- Skript für das Umschalten zwischen vollem Text und Kurzfassung -->
+  </div>
+  
+  <!-- Deutsche Version (anfangs versteckt) -->
+  <div id="content-de" style="display: none;">
+    <section class="reiter-experience">
+      <h2>Erfahrungen bei der Heinrich Reiter GmbH</h2>
+      <!-- Umschalt-Button für Kurz-/Langfassung -->
+      <button id="toggle-text-btn-de">Kurze Version</button>
+      <div id="docx-content-de">
+        <p>
+          Von Anfang an war mir klar, dass von mir mehr erwartet wurde als von anderen im Unternehmen. Ich sollte schnell lernen, wie man die Waren kommissioniert und verpackt sowie die speziellen Wünsche einzelner Kunden verstehen, die Produkte selbst beherrschen und Kunden beraten. Ich wurde nicht nur eingestellt, um die Lagerverwaltung zu unterstützen, sondern auch, um den Einzelhandelsverkauf zu fördern. Im Verkauf musste ich den Verkauf und die Abwicklung der Waren sowie die Anliegen der Kunden im Laden behandeln – zusätzlich zu den typischen Aufgaben im Lager.
+        </p>
+        <p>
+          Teamarbeit war in diesem Unternehmen eine Herausforderung. Es gab viele verschiedene Abteilungen und Bereiche, und schon lange vor meinem Einstieg gab es Streitigkeiten und Konflikte unter langjährigen Mitarbeitern. Es bildeten sich stets kleine Gruppen, die sich gegenseitig unterstützten und eine gute Atmosphäre schufen – jedoch gab es in meinen fast acht Jahren nie einen Moment, in dem alle im Lager harmonierten. Der Unternehmensleiter, der Sohn des Gründers, hatte sogar seine beiden Söhne ins Unternehmen geholt. Obwohl er stets für die Arbeitssicherheit seiner Mitarbeiter sorgte, hatte er kein offenes Ohr für Meinungsverschiedenheiten.
+        </p>
+        <p>
+          Die Zeit verging, und es gab einen ständigen Wechsel der Mitarbeiter. Mit allen neuen Kollegen verstand ich mich immer sehr gut. Im Verkauf bemühte ich mich, so viel wie möglich über die verschiedenen Produkte aus eigenem Antrieb zu lernen. Es wurde von mir erwartet, die häufigsten Probleme im Laden selbst zu lösen – bei komplizierteren Angelegenheiten sollte ich das Fachpersonal im Büro hinzuziehen. Da ich den Chef offenbar sehr zufriedengestellt hatte, stieg mein Gehalt fast jährlich, was mir ein sehr angenehmes Gefühl im Unternehmen vermittelte, insbesondere als jemand mit einem niedrigen Bildungsniveau.
+        </p>
+        <p>
+          Anschließend setzte ich mir das Ziel, im Lager eine Führungsposition zu erreichen, und begann, mein Wissen weiter auszubauen. Ich wechselte innerhalb des Lagers die Abteilungen und stand stets bereit, dort auszuhelfen, wo es nötig war. Dadurch wurde ich schnell der einzige Mitarbeiter, der in allen Bereichen gearbeitet hatte und das gesamte Lager kannte. Als sich die Gelegenheit bot, wurde ich – trotz meines jungen Alters und der wenigen Dienstjahre – als einer von zwei Teamleitern im Lager eingesetzt. In unserem Lager gab es keinen Lagerverwalter, sondern zwei Teamleiter, die das Lager und die Aufgaben unter sich aufteilten. Durch meine Bemühungen, in allen Bereichen Erfahrungen zu sammeln, begannen immer mehr Mitarbeiter, auch außerhalb ihres eigenen Verantwortungsbereichs auszuhelfen, und die Gesamtatmosphäre verbesserte sich. Auch wenn das Lager keine vollständige Einheit bildete, verbesserte sich die Teamarbeit.
+        </p>
+      </div>
+    </section>
+  </div>
+  
+  <!-- JavaScript für Sprachumschalter und Text-Umschaltung -->
   <script>
-    // Beim Laden der Seite wird der volle Text aus dem HTML in der Variable fullText gespeichert.
+    function switchLanguage(lang) {
+      if (lang === 'en') {
+        document.getElementById('content-en').style.display = 'block';
+        document.getElementById('content-de').style.display = 'none';
+      } else if (lang === 'de') {
+        document.getElementById('content-en').style.display = 'none';
+        document.getElementById('content-de').style.display = 'block';
+      }
+    }
+    
+    // Umschaltung zwischen voller und kurzer Version (Englisch)
     let docxContent = document.getElementById('docx-content');
     let fullText = docxContent.innerHTML;
     let isShort = false;
-    
     const toggleBtn = document.getElementById('toggle-text-btn');
-    // Definiere hier die Kurzfassung (anpassbar)
     const shortText = `
       <p>
-        From the start, it was clear that more was expected of me compared to others. I quickly learned to pick and pack goods, understand special customer requests, master product knowledge, and provide customer consultation. My role included assisting with warehouse management and supporting retail sales, handling sales, collection, and customer concerns.
+       From the start, it was clear that more was expected of me compared to others. I quickly learned to pick and pack goods, understand special customer requests, master product knowledge, and provide customer consultation. My role included assisting with warehouse management and supporting retail sales, handling sales, collection, and customer concerns.
 
         Teamwork was challenging due to longstanding disagreements among employees, but there were always small supportive groups. Despite constant employee turnover, I got along well with new colleagues and took the initiative to learn about different products. My efforts were recognized, and my salary increased almost annually, making me feel comfortable in the company.
 
         I aimed to become a leader in the warehouse, expanding my knowledge and helping out in various departments. This made me the only employee with experience in every area of the warehouse. Eventually, I was appointed as one of two team leaders, despite being the youngest and having the fewest years of service. My efforts improved teamwork and the overall atmosphere, although the warehouse was never a complete unit.
-      </p>
+       </p>
     `;
-    
-    toggleBtn.addEventListener('click', () => {
+    toggleBtn.addEventListener('click', function() {
       if (!isShort) {
         docxContent.innerHTML = shortText;
         toggleBtn.textContent = "Read more";
@@ -108,6 +129,31 @@
         docxContent.innerHTML = fullText;
         toggleBtn.textContent = "Short Version";
         isShort = false;
+      }
+    });
+    
+    // Umschaltung zwischen voller und kurzer Version (Deutsch)
+    let docxContentDe = document.getElementById('docx-content-de');
+    let fullTextDe = docxContentDe.innerHTML;
+    let isShortDe = false;
+    const toggleBtnDe = document.getElementById('toggle-text-btn-de');
+    const shortTextDe = `
+      <p>
+        Von Anfang an war klar, dass mehr von mir erwartet wurde als von anderen. Ich lernte schnell, Waren zu kommissionieren und zu verpacken, besondere Kundenwünsche zu verstehen, Produktkenntnisse zu vertiefen und Kunden zu beraten. Meine Aufgabe umfasste die Unterstützung der Lagerverwaltung sowie die Förderung des Einzelhandelsverkaufs, einschließlich Verkauf, Abwicklung und der Bearbeitung von Kundenanliegen.
+
+        Die Teamarbeit erwies sich aufgrund langanhaltender Konflikte unter den Mitarbeitern als herausfordernd, dennoch gab es stets kleine, unterstützende Gruppen. Trotz des ständigen Mitarbeiterwechsels verstand ich mich gut mit den neuen Kollegen und ergriff die Initiative, mich über unterschiedliche Produkte zu informieren. Meine Bemühungen wurden anerkannt, und mein Gehalt stieg fast jährlich, was mir ein angenehmes Gefühl im Unternehmen vermittelte.
+
+        Ich setzte mir das Ziel, eine Führungsposition im Lager zu erreichen, mein Wissen zu erweitern und in verschiedenen Abteilungen mitzuhelfen. Dadurch wurde ich der einzige Mitarbeiter, der in allen Bereichen des Lagers Erfahrung sammelte. Schließlich wurde ich – trotz meines jungen Alters und der wenigen Dienstjahre – als einer von zwei Teamleitern ernannt. Meine Anstrengungen verbesserten die Teamarbeit und das allgemeine Betriebsklima, auch wenn das Lager nie eine vollständig geschlossene Einheit bildete.</p>
+    `;
+    toggleBtnDe.addEventListener('click', function() {
+      if (!isShortDe) {
+        docxContentDe.innerHTML = shortTextDe;
+        toggleBtnDe.textContent = "Mehr lesen";
+        isShortDe = true;
+      } else {
+        docxContentDe.innerHTML = fullTextDe;
+        toggleBtnDe.textContent = "Kurze Version";
+        isShortDe = false;
       }
     });
   </script>
